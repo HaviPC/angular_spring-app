@@ -1,0 +1,56 @@
+
+<div class="container-fluid">
+  
+    <form class="loginForm" name="myForm" center >
+        <h2 class="loginHead">Shopping Portal</h2><br>
+        <h5  *ngIf="value3!='show'" class="loginHead">Please Sign In to continue</h5><br>
+        <h5 *ngIf="value3=='show'" class="loginHead">Please Register to continue..!!</h5><br>
+        
+        <mat-form-field class="example-full-width" *ngIf="value3!='show'">
+    <input matInput placeholder="Email" [(ngModel)]="user.email" id = "email"
+             name = "email"  required>
+  </mat-form-field>
+  <h6 *ngIf="flag1" class="loginHead">Not a valid e-mail address!</h6><br>
+        <button *ngIf="value3!='show'" class="css3button" (click)="onLoginSubmit()" >Sign In</button>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+         <button  *ngIf="s" class="css3button" (click)="newUserclick()" matTooltip="Not yet registered? Register here!">new user?</button>
+    
+      
+
+    <div *ngIf="value3=='show'">
+      <mat-form-field class="example-full-width">
+    <input matInput placeholder="ID" [(ngModel)]="user.id"  id = "id"
+             name = "id" required >
+
+  </mat-form-field>
+     <mat-form-field class="example-full-width">
+    <input matInput placeholder="Name" [(ngModel)]="user.name"  id = "name"
+             name = "name" required>
+  </mat-form-field>
+    <mat-form-field class="example-full-width">
+    <input matInput placeholder="Address" [(ngModel)]="user.address" id = "address" name = "address" >
+  </mat-form-field>
+     <mat-form-field>
+  <mat-select placeholder="Gender" [(ngModel)]="user.gender" id = "gender" name = "gender" >
+    <mat-option *ngFor="let gender of genders" [value]="gender.value"  >
+      {{ gender.viewValue }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+  <mat-form-field>
+  <input matInput [matDatepicker]="picker" placeholder="Enter your Date of Birth" [(ngModel)]="user.dob" id = "dob" name = "dob" required>
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+            <mat-form-field class="example-full-width">
+    <input matInput placeholder="Email" [(ngModel)]="user.email" id = "email"
+             name = "email"  required>
+  </mat-form-field>
+ 
+  <mat-checkbox (change)="doalert($event)">*I Agree to the Terms and Conditions</mat-checkbox>
+  
+    </div> 
+     <button *ngIf="flag" class="css3button" (click)="myFunction()">Register</button>
+    </form>
+  
+</div>

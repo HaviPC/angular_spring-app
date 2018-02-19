@@ -1,0 +1,44 @@
+
+<table>
+    <tr>
+        <th>Product Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Add to Cart</th>
+        <th>Remove</th>
+        
+    </tr>
+   
+
+    <tr *ngFor="let product of products; ">
+        <td>{{product.name}}</td>
+        <td>{{product.description}}</td>
+        <td>{{product.price}}</td>
+        <td><input type="button" (click)="myFunction(product)" value="ADD" name="add"></td>
+        <td><input type="button" (click)="myFunction2(product)" value="REMOVE" name="sub"></td>
+      
+    </tr>
+
+    <br>
+
+
+
+<br>
+<br>
+</table>
+
+<table>
+     <tr>
+        
+  
+         <th>QUANTITY</th>
+          <th>PRODUCT ID</th>
+ </tr>
+ <tr *ngFor="let product of products;">
+        
+        <td>{{counts[product.productId]}}</td>
+        <td>{{product.productId}}</td>
+          
+
+           </tr>
+ </table>

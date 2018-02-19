@@ -1,0 +1,241 @@
+.loginForm {
+      display: flex;
+    flex-direction: column;
+    background: #f7f4f6;;
+    border: 1px solid #e9e9e9;
+    box-shadow: 0 5px 3px -3px rgba(0, 0, 0, .1);
+    width: 25%;
+    height: auto;
+    padding:10px;
+     margin: 0.5% auto;
+}
+.backg{
+    background: rgba(0,0,0,.03)
+}
+
+.loginForm .loginHead {
+    text-align: center;
+    color: #3f51b5;
+}
+
+.loginForm .css3input {
+    height: 50px;
+}
+
+.loginForm .css3input input {
+    position: relative;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #CCC;
+    padding-top: 12px;
+    height: 30px;
+    width: 100%;
+    transition: all 0.2s ease-out;
+    z-index: 3;
+}
+
+.loginForm .css3input input:focus {
+    border-bottom: 2px solid #3489db;
+    outline: none;
+}
+
+.loginForm .css3input input:focus+label,
+.loginForm .css3input input:valid+label {
+    color: #3498db;
+    top: -35px;
+    font-size: small;
+}
+
+.loginForm .css3input select {
+    /*-webkit-appearance: none;*/
+    position: relative;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #CCC;
+    padding-top: 12px;
+    height: 30px;
+    width: 100%;
+    z-index: 3;
+    transition: all 0.2s ease-out;
+}
+
+.loginForm .css3input select option:disabled {
+    display: none;
+}
+
+.loginForm .css3input select:focus {
+    outline: none;
+    border-bottom: 2px solid #3498db;
+}
+
+.loginForm .css3input select:focus+label,
+.loginForm .css3input select:valid+label {
+    color: #3498db;
+    top: -35px;
+    font-size: small;
+}
+
+.loginForm .css3input label {
+    font-weight: normal;
+    margin-bottom: 0px;
+    position: relative;
+    top: -20px;
+    color: #AAA;
+    z-index: 0;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.loginForm button.css3button:focus {
+    outline: none;
+}
+
+.loginForm button.css3button {
+    padding: 5px;
+    width: 100%;
+    background: #3f51b5;
+    color: white;
+    border: none;
+    font-size: large;
+}
+
+.loginForm .errorMessage {
+    background: #c0392b;
+    height: 35px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    margin: 15px 0px;
+}
+
+.loginForm .errorMessageNew {
+    position: relative;
+    top: -18px;
+    font-size: small;
+    color: red;
+}
+
+
+.loginForm1 {
+    display: flex;
+    flex-direction: column;
+    background: #f7f4f6;;
+    border: 1px solid #e9e9e9;
+    box-shadow: 0 5px 3px -3px rgba(0, 0, 0, .1);
+    width: 25%;
+    height: auto;
+    padding:10px;
+     margin: 5% auto;
+}
+
+.loginForm1 .loginHead {
+    text-align: center;
+    color: #3f51b5;
+}
+
+.loginForm1 .css3input {
+    height: 50px;
+}
+
+.loginForm1 .css3input input {
+    position: relative;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #CCC;
+    padding-top: 12px;
+    height: 30px;
+    width: 100%;
+    transition: all 0.2s ease-out;
+    z-index: 3;
+}
+
+.loginForm1 .css3input input:focus {
+    border-bottom: 2px solid #3f51b5;
+    outline: none;
+}
+
+.loginForm1 .css3input input:focus+label,
+.loginForm1 .css3input input:valid+label {
+    color: #3f51b5;
+    top: -35px;
+    font-size: small;
+}
+
+.loginForm1 .css3input select {
+    /*-webkit-appearance: none;*/
+    position: relative;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #CCC;
+    padding-top: 12px;
+    height: 30px;
+    width: 100%;
+    z-index: 3;
+    transition: all 0.2s ease-out;
+}
+
+.loginForm1 .css3input select option:disabled {
+    display: none;
+     margin: 10px;
+}
+
+.loginForm1 .css3input select:focus {
+    outline: none;
+    border-bottom: 2px solid #3f51b5;
+}
+
+.loginForm1 .css3input select:focus+label,
+.loginForm1 .css3input select:valid+label {
+    color: #3f51b5;
+    top: -35px;
+    font-size: small;
+}
+
+.loginForm1 .css3input label {
+    font-weight: normal;
+    margin-bottom: 0px;
+    position: relative;
+    top: -20px;
+    color: #AAA;
+    z-index: 0;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.loginForm1 button.css3button:focus {
+    outline: none;
+}
+
+.loginForm1 button.css3button {
+    padding: 5px;
+    width: 100%;
+    background: #3f51b5;
+    color: white;
+    border: none;
+    font-size: large;
+}
+
+.loginForm1 .errorMessage {
+    background: #c0392b;
+    height: 35px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    margin: 15px 0px;
+}
+
+.loginForm1 .errorMessageNew {
+    position: relative;
+    top: -18px;
+    font-size: small;
+    color: red;
+}
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.example-container > * {
+  width: 100%;
+}
